@@ -15,7 +15,8 @@ class BoxList extends Component {
     }
 
     addItem(box) {
-        let newBox = <Box key={uuidv4()} width={box.width} height={box.height} color={box.color} id={uuidv4()} removeBox={this.removeBox}/>
+        let uid = uuidv4();
+        let newBox = <Box key={uid} width={box.width} height={box.height} color={box.color} id={uid} removeBox={this.removeBox}/>
         this.setState(oldState => ({
             items: [...oldState.items, newBox]
         }));

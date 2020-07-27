@@ -6,7 +6,6 @@ class Box extends Component {
         width: 100,
         height: 100,
         color: 'black',
-        id: ''
     };
 
     constructor(props) {
